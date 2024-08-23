@@ -39,7 +39,7 @@ const projects = [
 
 function ProjectCard({ project }) {
   return (
-    <div className=" shadow-md shadow-white rounded-lg overflow-hidden transition  transform hover:scale-105 duration-300">
+    <div className=" shadow  shadow-white rounded-lg overflow-hidden transition  transform hover:scale-105 duration-300">
       <div className="absolute inset-0 bg-white/5 backdrop-blur-lg rounded-lg  "></div>
       <div className="p-5 flex flex-col justify-between h-full relative z-10">
         <img
@@ -96,13 +96,13 @@ function Project() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col h-svh justify-between "
+        className="relative flex flex-col h-svh justify-between overflow-x-hidden"
       >
         {/* Navbar */}
         <Navbar />
-        <section id="projects" className="pb-8 pt-4">
+        <section id="projects" className="pb-6 pt-3">
           <div className=" px-5">
-            <h2 className="text-5xl font-bold text-center pb-10  bg-clip-text font-salsa text-transparent bg-gradient-to-r from-gray-600 to-white">
+            <h2 className="text-5xl max-md:text-4xl max-md:pb-5 font-bold text-center pb-10  bg-clip-text font-salsa text-transparent bg-gradient-to-r from-gray-600 to-white">
               Projects
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">

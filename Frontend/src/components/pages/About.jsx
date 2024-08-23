@@ -78,20 +78,23 @@ const About = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col h-svh justify-between overflow-hidden"
+        className="relative flex flex-col h-svh justify-between overflow-x-hidden"
       >
         {/* Navbar */}
         <Navbar />
-        <section id="about" className=" text-white py-8  font-work">
+        <section
+          id="about"
+          className="  text-white pt-3 overflow-hidden max-md:py-0 max-md:pt-4 max-md:overflow-scroll font-work"
+        >
           {/* Hero Section */}
-          <div className="flex flex-col items-center text-center">
-            <h1 className="text-4xl font-bold pb-3 bg-clip-text font-salsa text-transparent bg-gradient-to-r from-gray-600 to-white">
+          <div className="flex flex-col items-center text-center max-md:px-4">
+            <h1 className="text-4xl max-md:text-2xl font-bold pb-3 max-md:pb-2 bg-clip-text font-salsa text-transparent bg-gradient-to-r from-gray-600 to-white">
               Hello, I'm Arjun Gupta
             </h1>
-            <h2 className="text-2xl text-gray-400 mb-4">
+            <h2 className="text-2xl max-md:text-xl text-gray-400 max-md:mb-2 mb-4">
               MERN Stack Developer & Tech Enthusiast
             </h2>
-            <p className="text-lg max-w-3xl mx-auto">
+            <p className="text-lg max-w-3xl max-md:text-sm mx-auto">
               Passionate about building innovative solutions that bridge the gap
               between technology and user experience. With a strong foundation
               in web development and a knack for problem-solving, I’m always
@@ -101,11 +104,11 @@ const About = () => {
           </div>
 
           {/* Skills Overview */}
-          <div className="mt-10 flex flex-col justify-between items-center">
-            <h2 className="text-4xl  font-bold mb-8 text-center bg-clip-text  text-transparent bg-gradient-to-r from-gray-600 to-white">
+          <div className="mt-10 max-md:mt-4 flex flex-col justify-between items-center">
+            <h2 className="text-4xl max-md:text-2xl font-bold mb-8 text-center bg-clip-text  text-transparent bg-gradient-to-r from-gray-600 to-white">
               Skills & Expertise
             </h2>
-            <div className="flex gap-5 flex-wrap w-3/4  justify-between">
+            <div className="flex gap-5 flex-wrap w-3/4 max-md:gap-0 max-md:w-3/4 justify-between">
               {skills.map((skill) => (
                 <SkillCard key={skill.name} skill={skill} />
               ))}
@@ -115,11 +118,11 @@ const About = () => {
           {/* Professional Journey */}
 
           {/* Personal Story */}
-          <div className="mt-12 mb-4">
-            <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-600 to-white text-center">
+          <div className="mt-12 mb-4 max-md:mt-6 max-md:px-4">
+            <h2 className="text-4xl max-md:text-2xl max-md:mb-3 font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-600 to-white text-center">
               A Bit More About Me
             </h2>
-            <p className="text-lg max-w-3xl mx-auto text-center">
+            <p className="text-lg max-w-3xl max-md:text-sm mx-auto text-center">
               Over the years, I have honed my skills in web development,
               embracing challenges and continually learning. When I'm not
               coding, you'll find me exercising, sipping coffee, exploring new
