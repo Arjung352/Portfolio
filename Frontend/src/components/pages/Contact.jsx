@@ -21,7 +21,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/send", formData)
+      .post("https://portfolio-api-sigma-umber.vercel.app/send", formData)
       .then((response) => {
         setStatus("Message Sent Successfully!");
         setFormData({ name: "", email: "", message: "" });
