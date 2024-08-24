@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { AuroraBackground } from "./ui/aurora-background";
 import { FlipWords } from "./ui/flip-words";
-import HoverBorderGradient from "./ui/hover-border-gradient";
 import DownloadIcon from "@mui/icons-material/Download";
 import Footer from "./pages/Footer";
 import Navbar from "./pages/Navbar";
