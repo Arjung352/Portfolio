@@ -6,7 +6,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import Footer from "./pages/Footer";
 import Navbar from "./pages/Navbar";
 
-export function Home() {
+function Home() {
   return (
     <div>
       <AuroraBackground>
@@ -59,3 +59,4 @@ export function Home() {
     </div>
   );
 }
+export default Home;
