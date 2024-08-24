@@ -17,7 +17,7 @@ export function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col h-svh overflow-hidden justify-between"
+          className="relative flex flex-col h-svh overflow-hidden justify-between top-0 left-0 "
         >
           {/* Navbar */}
           <Navbar />
@@ -39,7 +39,11 @@ export function Home() {
                 />
               </p>
               <div className="flex justify-center">
-                <a href="./src/components/ui/image.png" download title="Resume">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1zLdX3d7j0vsoCDXA7kLQKj2dZRVfxkcU"
+                  download
+                  title="Resume"
+                >
                   <HoverBorderGradient className="max-md:text-base">
                     Resume <DownloadIcon />
                   </HoverBorderGradient>

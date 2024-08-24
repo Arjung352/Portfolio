@@ -42,7 +42,7 @@ function Contact() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col h-svh justify-between overflow-x-hidden "
+        className="relative flex flex-col h-svh justify-between overflow-x-hidden overflow-y-hidden max-md:overflow-y-scroll "
       >
         {/* Navbar */}
         <Navbar />

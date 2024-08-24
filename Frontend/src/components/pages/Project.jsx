@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const projects = [
   {
     title: "Dot-Blog",
-    img: "/src/components/pages/IMG/DotBlog.png",
+    img: "./images/project/DotBlog.png",
     description: "Dot-Blog is a Bloging ",
     technologies: ["React", "Tailwind CSS", "Firebase"],
     liveLink: "https://blogingdotblog.netlify.app/",
@@ -13,14 +13,14 @@ const projects = [
   },
   {
     title: "Taste Buds Treat",
-    img: "/src/components/pages/IMG/TasteBudsTreat.png",
+    img: "./images/project/TasteBudsTreat.png",
     description: "A full-featured e-commerce platform built with MERN stack.",
     technologies: ["MongoDB", "Express", "React", "Node.js"],
     repoLink: "https://github.com/Arjung352/TasteBudsTreat",
   },
   {
     title: "Task Tracker",
-    img: "/src/components/pages/IMG/Task Tracker.png",
+    img: "./images/project/Task Tracker.png",
     description:
       "Task Tracker is a task tracking webapp that allows you to create and manage tasks.",
     technologies: [

@@ -10,7 +10,7 @@ function Footer() {
       <hr />
       <div className="flex justify-between items-center ">
         <img
-          src="./src/components/ui/image.png"
+          src="./images/logo.png"
           className=" h-16 w-28 max-md:h-12 max-md:w-24 "
         />
         <p className="text-white relative left-10 font-work max-md:hidden">

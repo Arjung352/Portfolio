@@ -19,11 +19,7 @@ function Navbar() {
       <nav className="backdrop-blur-2xl">
         <div className="flex p-4 max-md:p-1">
           <div className="flex w-full justify-between items-center">
-            <img
-              src="./src/components/ui/image.png"
-              className="h-16 w-28"
-              alt="Logo"
-            />
+            <img src="./images/logo.png" className="h-16 w-28" alt="Logo" />
             <ul className="text-white flex text-2xl max-md:hidden font-medium font-work items-center gap-10">
               <li>
                 <NavLink
