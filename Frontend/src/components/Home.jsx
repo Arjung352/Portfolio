@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { AuroraBackground } from "./ui/aurora-background";
 import { FlipWords } from "./ui/flip-words";
 import DownloadIcon from "@mui/icons-material/Download";
 import Footer from "./pages/Footer";
@@ -8,7 +7,7 @@ import Navbar from "./pages/Navbar";
 function Home() {
   return (
     <div>
-      <AuroraBackground>
+      <div className="bg-gradient-to-r from-black to-lightGray h-svh w-full ">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +16,7 @@ function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="fixed inset-0 h-svh flex flex-col overflow-hidden justify-between"
+          className="fixed inset-0 h-svh flex flex-col overflow-hidden justify-between "
         >
           {/* Navbar */}
           <Navbar />
@@ -53,7 +52,7 @@ function Home() {
           {/* Footer */}
           <Footer />
         </motion.div>
-      </AuroraBackground>
+      </div>
     </div>
   );
 }

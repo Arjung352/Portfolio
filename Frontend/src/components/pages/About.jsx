@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import { AuroraBackground } from "../ui/aurora-background";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -69,7 +68,7 @@ const skills = [
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <AuroraBackground>
+    <div className="bg-gradient-to-r from-black to-lightGray h-svh w-full ">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -134,7 +133,7 @@ const About = () => {
           <Footer />
         </section>
       </motion.div>
-    </AuroraBackground>
+    </div>
   );
 };
 

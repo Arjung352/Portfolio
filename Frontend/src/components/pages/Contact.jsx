@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import { AuroraBackground } from "../ui/aurora-background";
 import Footer from "./Footer";
 import { useState } from "react";
 import axios from "axios";
@@ -33,7 +32,7 @@ function Contact() {
       });
   };
   return (
-    <AuroraBackground>
+    <div className="bg-gradient-to-r from-black to-lightGray h-svh w-full ">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -165,7 +164,7 @@ function Contact() {
         </section>
         <ToastContainer />
       </motion.div>
-    </AuroraBackground>
+    </div>
   );
 }
 

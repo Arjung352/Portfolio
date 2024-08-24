@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import { AuroraBackground } from "../ui/aurora-background";
 import Footer from "./Footer";
 const projects = [
   {
@@ -87,7 +86,7 @@ function ProjectCard({ project }) {
 
 function Project() {
   return (
-    <AuroraBackground>
+    <div className="bg-gradient-to-r from-black to-lightGray h-svh w-full ">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +113,7 @@ function Project() {
           <Footer />
         </section>
       </motion.div>
-    </AuroraBackground>
+    </div>
   );
 }
 export default Project;
