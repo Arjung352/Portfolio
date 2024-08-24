@@ -96,23 +96,23 @@ function Project() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col h-svh justify-between overflow-x-hidden"
+        className="relative flex flex-col h-svh justify-between overflow-hidden"
       >
         {/* Navbar */}
         <Navbar />
-        <section id="projects" className="pb-6 pt-3">
+        <section id="projects" className=" pt-3 max-md:overflow-scroll">
           <div className=" px-5">
             <h2 className="text-5xl max-md:text-4xl max-md:pb-5 font-bold text-center pb-10  bg-clip-text font-salsa text-transparent bg-gradient-to-r from-gray-600 to-white">
               Projects
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-10">
               {projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
             </div>
           </div>
+          <Footer />
         </section>
-        <Footer />
       </motion.div>
     </AuroraBackground>
   );

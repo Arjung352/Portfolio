@@ -46,7 +46,7 @@ function Contact() {
       >
         {/* Navbar */}
         <Navbar />
-        <section id="contact" className="pb-8 pt-4 ">
+        <section id="contact" className=" max-md:overflow-scroll mt-4">
           <div className="container mx-auto px-5">
             <h2 className="text-5xl font-salsa max-md:mb-5  max-md:text-4xl text-center mb-10  bg-clip-text  text-transparent bg-gradient-to-r from-gray-600 to-white">
               Contact Me
@@ -93,7 +93,7 @@ function Contact() {
                   </ul>
                 </div>
               </div>
-              <div className=" shadow rounded-lg p-8 w-full relative md:w-1/2 shadow-white">
+              <div className=" shadow rounded-lg p-8 w-full relative md:w-1/2 shadow-white mb-8">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-lg rounded-lg  "></div>
 
                 <form className="relative z-10" onSubmit={handleSubmit}>
@@ -161,8 +161,8 @@ function Contact() {
               </div>
             </div>
           </div>
+          <Footer />
         </section>
-        <Footer />
         <ToastContainer />
       </motion.div>
     </AuroraBackground>

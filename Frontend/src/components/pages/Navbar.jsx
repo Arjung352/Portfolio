@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="backdrop-blur-2xl">
+      <nav className="backdrop-blur-2xl ">
         <div className="flex p-4 max-md:p-1">
           <div className="flex w-full justify-between items-center">
             <img src="./images/logo.png" className="h-16 w-28" alt="Logo" />
