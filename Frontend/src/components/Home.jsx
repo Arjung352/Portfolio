@@ -44,10 +44,9 @@ function Home() {
                   href="https://drive.google.com/uc?export=download&id=1zLdX3d7j0vsoCDXA7kLQKj2dZRVfxkcU"
                   download
                   title="Resume"
+                  className="text-2xl flex justify-between items-center gap-2 max-md:text-base bg-black text-white px-4 py-3 rounded-3xl shadow shadow-white"
                 >
-                  <HoverBorderGradient className="max-md:text-base">
-                    Resume <DownloadIcon />
-                  </HoverBorderGradient>
+                  Resume <DownloadIcon />
                 </a>
               </div>
             </div>
