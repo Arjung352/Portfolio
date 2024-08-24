@@ -5,6 +5,7 @@ import HoverBorderGradient from "./ui/hover-border-gradient";
 import DownloadIcon from "@mui/icons-material/Download";
 import Footer from "./pages/Footer";
 import Navbar from "./pages/Navbar";
+
 export function Home() {
   return (
     <div>
@@ -17,7 +18,7 @@ export function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col h-svh overflow-hidden justify-between top-0 left-0 "
+          className="fixed inset-0 h-svh flex flex-col overflow-hidden justify-between"
         >
           {/* Navbar */}
           <Navbar />
@@ -48,12 +49,11 @@ export function Home() {
                     Resume <DownloadIcon />
                   </HoverBorderGradient>
                 </a>
-                {/* Need to add the resume */}
               </div>
             </div>
           </main>
-          <Footer />
           {/* Footer */}
+          <Footer />
         </motion.div>
       </AuroraBackground>
     </div>
