@@ -68,7 +68,7 @@ const skills = [
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="bg-gradient-to-r from-black to-lightGray h-svh w-full ">
+    <div className="bg-gradient-to-r max-h-svh from-black to-lightGray h-svh w-full ">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

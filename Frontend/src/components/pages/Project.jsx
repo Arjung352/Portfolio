@@ -38,7 +38,7 @@ const projects = [
 
 function ProjectCard({ project }) {
   return (
-    <div className=" shadow  shadow-white rounded-lg overflow-hidden transition  transform hover:scale-105 duration-300">
+    <div className=" shadow  shadow-white rounded-lg overflow-hidden max-h-svh transition  transform hover:scale-105 duration-300">
       <div className="absolute inset-0 bg-white/5 backdrop-blur-lg rounded-lg  "></div>
       <div className="p-5 flex flex-col justify-between h-full relative z-10">
         <img
