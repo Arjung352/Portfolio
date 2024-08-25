@@ -11,7 +11,7 @@ const Contact = lazy(() => import("./components/pages/Contact"));
 
 const App = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-svh max-h-svh">
       <BrowserRouter>
         <Suspense
           fallback={
