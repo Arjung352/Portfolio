@@ -17,14 +17,14 @@ function Footer() {
           &copy; 2024 All Rights Reserved | Arjun Gupta
         </p>
         <div className="flex text-white mr-8 max-md:mr-2 gap-2 ">
-          <a
+          {/* <a
             href="https://www.instagram.com/_arjungupta29/"
             target="_"
             className="hover:scale-110"
             title="Instagram"
           >
             <InstagramIcon className="mr-2 max-md:mr-1 cursor-pointer" />
-          </a>
+          </a> */}
           <a
             href="https://github.com/Arjung352/"
             target="_"
