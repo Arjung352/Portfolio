@@ -37,16 +37,16 @@ function Home() {
                   ]}
                 />
               </p>
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1zLdX3d7j0vsoCDXA7kLQKj2dZRVfxkcU"
+                  href="https://drive.google.com/file/d/1_SXiKK2P3nquL_RjpayPGOXoA2OY7x_Y/view?usp=sharing"
                   download
                   title="Resume"
                   className="text-2xl flex justify-between items-center gap-2 max-md:text-base bg-black text-white px-4 py-3 rounded-3xl shadow shadow-white"
                 >
                   Resume <DownloadIcon />
                 </a>
-              </div>
+              </div> */}
             </div>
           </main>
           {/* Footer */}
