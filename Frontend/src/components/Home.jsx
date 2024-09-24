@@ -39,7 +39,7 @@ function Home() {
               </p>
               {/* <div className="flex justify-center">
                 <a
-                  href="https://drive.google.com/file/d/1_SXiKK2P3nquL_RjpayPGOXoA2OY7x_Y/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1p3hP-L7VOmzdLy2OpnbzbnpVLUXnXnYa/view"
                   download
                   title="Resume"
                   className="text-2xl flex justify-between items-center gap-2 max-md:text-base bg-black text-white px-4 py-3 rounded-3xl shadow shadow-white"

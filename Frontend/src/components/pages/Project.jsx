@@ -6,7 +6,7 @@ const projects = [
     title: "Dot-Blog",
     img: "./images/project/DotBlog.png",
     description: "Dot-Blog is a Bloging ",
-    technologies: ["React", "Tailwind CSS", "Firebase"],
+    technologies: ["React", "Tailwind CSS", "Express", "MongoDB"],
     liveLink: "https://blogingdotblog.netlify.app/",
     repoLink: "https://github.com/Arjung352/BlogApp",
   },
