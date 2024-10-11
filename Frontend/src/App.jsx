@@ -1,7 +1,9 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
+import * as THREE from "three"; // Required for Vanta.js
+import FOG from "vanta/dist/vanta.fog.min"; // Import the Vanta.js Fog effect
 
 // Lazy load the components
 const Home = lazy(() => import("./components/Home"));
@@ -10,8 +12,41 @@ const Project = lazy(() => import("./components/pages/Project"));
 const Contact = lazy(() => import("./components/pages/Contact"));
 
 const App = () => {
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const vantaRef = useRef(null);
+
+  // Initialize Vanta.js on mount and clean it up on unmount
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        FOG({
+          el: vantaRef.current,
+          THREE, // Required for Vanta
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          highlightColor: 0x0,
+          midtoneColor: 0x54543b,
+          lowlightColor: 0x6f31b1,
+          baseColor: 0x0,
+          blurFactor: 0.33,
+          speed: 0.8,
+          zoom: 0.8,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
-    <div className="relative min-h-svh max-h-svh">
+    <div
+      ref={vantaRef} // Attach the Vanta.js effect to this div
+      className="relative min-h-screen max-h-screen"
+    >
       <BrowserRouter>
         <Suspense
           fallback={
