@@ -32,8 +32,8 @@ const App = () => {
           lowlightColor: 0x6f31b1,
           baseColor: 0x0,
           blurFactor: 0.33,
-          speed: 0.8,
-          zoom: 0.8,
+          speed: 2,
+          zoom: 3,
         })
       );
     }
