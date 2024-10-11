@@ -32,7 +32,7 @@ function Contact() {
       });
   };
   return (
-    <div className="bg-gradient-to-r from-black to-lightGray h-svh w-full max-h-svh">
+    <div className="h-svh w-full max-h-svh">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

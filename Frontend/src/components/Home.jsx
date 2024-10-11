@@ -7,7 +7,7 @@ import Navbar from "./pages/Navbar";
 function Home() {
   return (
     <div>
-      <div className="bg-gradient-to-r from-black to-lightGray h-svh max-h-svh w-full ">
+      <div className="h-svh max-h-svh w-full ">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
