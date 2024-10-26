@@ -42,7 +42,7 @@ function Footer() {
             <LinkedInIcon className="cursor-pointer mr-2 max-md:mr-1" />
           </a>
           <a
-            href="mailto:arjung7751@gmail.com"
+            href="mailto:arjung.dev29@gmail.com.com"
             target="_"
             className="hover:scale-110"
             title="Mail"
