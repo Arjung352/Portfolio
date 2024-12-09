@@ -13,7 +13,6 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import Footer from "./Footer";
-import { useState } from "react";
 import SkillCard from "./SkillCard";
 const skills = [
   { name: "HTML", icon: <FaHtml5 className="text-red-600" />, title: "Html" },
@@ -66,7 +65,6 @@ const skills = [
 ];
 
 const About = () => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="h-svh w-full ">
       <motion.div
@@ -81,9 +79,9 @@ const About = () => {
       >
         {/* Navbar */}
         <Navbar />
-        <section
+        <main
           id="about"
-          className="  text-white pt-3 overflow-hidden max-md:py-0 max-md:pt-4 max-md:overflow-scroll font-work"
+          className=" flex flex-col justify-center items-center text-white pt-3 max-md:py-0 max-md:pt-4 font-work"
         >
           {/* Hero Section */}
           <div className="flex flex-col items-center text-center max-md:px-4">
@@ -115,7 +113,22 @@ const About = () => {
           </div>
 
           {/* Professional Journey */}
-
+          <div className="mt-12 mb-4 max-md:mt-6 max-md:px-4">
+            <h2 className="text-4xl max-md:text-2xl max-md:mb-3 font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-600 to-white text-center">
+              About My Future Ambition
+            </h2>
+            <p className="text-lg max-w-3xl max-md:text-sm mx-auto text-center">
+              Currently diving deep into{" "}
+              <span className="bg-clip-text  text-transparent bg-gradient-to-r from-gray-600 to-white font-bold text-xl underline decoration-white max-md:text-lg">
+                DevOps
+              </span>{" "}
+              to master seamless software deployment, and exploring{" "}
+              <span className="bg-clip-text  text-transparent bg-gradient-to-r from-gray-600 to-white font-bold text-xl underline decoration-white max-md:text-lg">
+                DSA
+              </span>{" "}
+              to sharpen problem-solving skills for scalable solutions.
+            </p>
+          </div>
           {/* Personal Story */}
           <div className="mt-12 mb-4 max-md:mt-6 max-md:px-4">
             <h2 className="text-4xl max-md:text-2xl max-md:mb-3 font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-600 to-white text-center">
@@ -128,10 +141,10 @@ const About = () => {
               technologies, or sharing knowledge within the tech community.
             </p>
           </div>
-
-          {/* Contact & Call to Action */}
+        </main>
+        <div>
           <Footer />
-        </section>
+        </div>
       </motion.div>
     </div>
   );

@@ -41,7 +41,7 @@ function Contact() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col h-svh justify-between overflow-x-hidden overflow-y-hidden max-md:overflow-y-scroll "
+        className="relative flex flex-col h-svh justify-between overflow-x-hidden"
       >
         {/* Navbar */}
         <Navbar />
@@ -62,9 +62,11 @@ function Contact() {
                 <div className="relative z-10 shadow shadow-white rounded-lg p-8">
                   <h3 className="text-3xl font-bold mb-4">Get in Touch</h3>
                   <p className="mb-6">
-                    I'm always open to discussing new projects, creative ideas,
-                    or opportunities to be part of your visions. Reach out to me
-                    through the form, or use the contact information below.
+                    I'm always excited to collaborate on innovative projects,
+                    explore creative ideas, and contribute to meaningful
+                    visions. Feel free to reach out via the contact form or
+                    through the information provided below. Let’s bring ideas to
+                    life together!
                   </p>
                   <ul>
                     <li className="mb-4">
@@ -73,16 +75,7 @@ function Contact() {
                         href="mailto:arjung7751@gmail.com"
                         className="text-blue-500 hover:underline"
                       >
-                        arjung7751@gmail.com
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <span className="font-semibold">Phone:</span>{" "}
-                      <a
-                        href="tel:+91 9999882574"
-                        className="text-blue-500 hover:underline"
-                      >
-                        +91 999 988 2574
+                        Arjung.dev29@gmail.com
                       </a>
                     </li>
                     <li>
@@ -160,9 +153,11 @@ function Contact() {
               </div>
             </div>
           </div>
-          <Footer />
         </section>
-        <ToastContainer />
+        <div>
+          <ToastContainer />
+        </div>
+        <Footer />
       </motion.div>
     </div>
   );
