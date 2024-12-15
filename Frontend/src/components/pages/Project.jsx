@@ -97,7 +97,7 @@ function ProjectCard({ project }) {
 
 function Project() {
   return (
-    <div className="h-svh w-full ">
+    <div className="h-svh w-full max-h-svh ">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -106,9 +106,9 @@ function Project() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col h-svh justify-between overflow-x-hidden"
+        className="fixed inset-0 h-svh flex flex-col overflow-x-hidden justify-between"
       >
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col h-svh">
           {/* Navbar */}
           <Navbar />
 

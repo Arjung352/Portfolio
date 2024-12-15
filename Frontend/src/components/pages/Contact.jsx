@@ -40,14 +40,17 @@ function Contact() {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="relative flex flex-col h-svh justify-between overflow-x-hidden"
+      className="fixed inset-0 h-svh flex flex-col overflow-x-hidden justify-between"
     >
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col h-svh">
         {/* Navbar */}
         <Navbar />
 
         {/* Contact Section */}
-        <main id="projects" className="flex-grow flex items-center pt-3">
+        <main
+          id="projects"
+          className="flex-grow justify-center flex items-center pt-3"
+        >
           <div className="px-5">
             <h2 className="text-5xl font-salsa max-md:mb-5 max-md:text-4xl text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-gray-600 to-white">
               Contact Me

@@ -66,7 +66,7 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="h-svh w-full ">
+    <div className="h-svh w-full max-h-svh">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ const About = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col h-svh justify-between overflow-x-hidden"
+        className="fixed inset-0 h-svh flex flex-col overflow-x-hidden justify-between"
       >
         {/* Navbar */}
         <Navbar />
@@ -105,7 +105,7 @@ const About = () => {
             <h2 className="text-4xl max-md:text-2xl font-bold mb-8 text-center bg-clip-text  text-transparent bg-gradient-to-r from-gray-600 to-white">
               Skills & Expertise
             </h2>
-            <div className="flex gap-5 flex-wrap w-3/4 max-md:gap-0 max-md:w-3/4 justify-between">
+            <div className="flex gap-5 flex-wrap w-4/6 max-md:gap-0 max-md:w-3/4 justify-between">
               {skills.map((skill) => (
                 <SkillCard key={skill.name} skill={skill} />
               ))}
