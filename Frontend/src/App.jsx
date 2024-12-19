@@ -43,10 +43,7 @@ const App = () => {
   }, [vantaEffect]);
 
   return (
-    <div
-      ref={vantaRef} // Attach the Vanta.js effect to this div
-      className="relative min-h-svh max-h-svh"
-    >
+    <div ref={vantaRef} className="h-lvh">
       <BrowserRouter>
         <Suspense
           fallback={
