@@ -5,31 +5,34 @@ import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { TailSpin } from "react-loader-spinner";
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState("");
+  // setting load on form submission
+  const [sending, setSend] = useState(false);
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios
+    setSend(true);
+    await axios
       .post("https://portfolio-api-sigma-umber.vercel.app/send", formData)
       .then((response) => {
-        setStatus("Message Sent Successfully!");
         setFormData({ name: "", email: "", message: "" });
         toast.success("Message Sent Successfully!");
       })
       .catch((error) => {
-        setStatus("Failed to send message.");
         toast.error("Failed to send message.");
       });
+    setSend(false);
   };
   return (
     <motion.div
@@ -147,11 +150,22 @@ function Contact() {
                       type="submit"
                       className="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300"
                     >
-                      Send Message
+                      {sending ? (
+                        <TailSpin
+                          height="25"
+                          width="25"
+                          color="#ffffff"
+                          ariaLabel="tail-spin-loading"
+                          radius="2"
+                          wrapperStyle={{ display: "inline-block" }}
+                          visible={true}
+                        />
+                      ) : (
+                        "Send Message"
+                      )}
                     </button>
                   </div>
                 </form>
-                <p>{status}</p>
               </div>
             </div>
           </div>
