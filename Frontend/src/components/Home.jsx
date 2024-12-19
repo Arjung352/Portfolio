@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { FlipWords } from "./ui/flip-words";
-import DownloadIcon from "@mui/icons-material/Download";
 import Footer from "./pages/Footer";
 import Navbar from "./pages/Navbar";
 
