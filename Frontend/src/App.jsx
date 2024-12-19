@@ -43,7 +43,7 @@ const App = () => {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="h-dvh">
+    <div ref={vantaRef} className="relative h-dvh">
       <BrowserRouter>
         <Suspense
           fallback={
