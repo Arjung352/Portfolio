@@ -3,19 +3,19 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 const projects = [
   {
-    title: "Dot-Blog",
+    title: "DotBlog",
     img: "./images/project/DotBlog.png",
     description:
-      "DotBlog is a dynamic blogging platform that empowers users to create, manage, and publish their blogs effortlessly. It also provides a space to explore, read, and engage with blogs from other users by liking and sharing thoughts.",
+      "DotBlog is a modern blogging platform built with the MERN stack, designed for both readers and writers to connect through content. Users can easily create an account, publish blogs, and explore posts in a clean, intuitive UI.",
     technologies: ["React", "Tailwind CSS", "Express", "MongoDB"],
     liveLink: "https://blogingdotblog.netlify.app/",
     repoLink: "https://github.com/Arjung352/BlogApp",
   },
   {
-    title: "Taste Buds Treat",
+    title: "TasteBudsTreat",
     img: "./images/project/TasteBudsTreat.png",
     description:
-      "A comprehensive food ordering platform built using the MERN stack, designed for seamless user experience. It features robust user authentication powered by Clerk and secure payment integration through Razorpay, ensuring a smooth and reliable checkout process.",
+      "TasteBudsTreat is a feature-rich food ordering platform built with the MERN stack, focused on delivering a seamless and engaging user experience. Users can browse menus, create accounts, place orders, and enjoy a secure and reliable checkout process powered by Razorpay.",
     technologies: [
       "MongoDB",
       "Express",
@@ -44,9 +44,9 @@ const projects = [
     liveLink: "https://startfinish.netlify.app  ",
     repoLink: "https://github.com/Arjung352/Task-Tracker",
   },
-  // Add more projects as needed
 ];
 
+// eslint-disable-next-line react/prop-types
 function ProjectCard({ project }) {
   return (
     <div className=" shadow  shadow-white rounded-lg max-h-svh transition  transform hover:scale-105 duration-300">

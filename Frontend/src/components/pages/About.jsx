@@ -7,8 +7,9 @@ import {
   FaReact,
   FaNodeJs,
   FaGithub,
+  FaJava,
 } from "react-icons/fa";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb, SiRedux } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -43,6 +44,11 @@ const skills = [
     title: "REACT",
   },
   {
+    name: "Redux",
+    icon: <SiRedux className="text-purple-400" />,
+    title: "REDUX",
+  },
+  {
     name: "NodeJS",
     icon: <FaNodeJs className="text-green-600" />,
     title: "NODE-JS",
@@ -58,9 +64,9 @@ const skills = [
     title: "MongoDB",
   },
   {
-    name: "Firebase",
-    icon: <IoLogoFirebase className=" text-orange-400" />,
-    title: "Firebase",
+    name: "Java",
+    icon: <FaJava className="text-orange-400" />,
+    title: "JAVA",
   },
 ];
 
@@ -105,7 +111,7 @@ const About = () => {
             <h2 className="text-4xl max-md:text-2xl font-bold mb-8 text-center bg-clip-text  text-transparent bg-gradient-to-r from-gray-600 to-white">
               Skills & Expertise
             </h2>
-            <div className="flex gap-5 flex-wrap w-4/6 max-md:gap-0 max-md:w-3/4 justify-between">
+            <div className="flex gap-5 flex-wrap w-[60%] max-md:gap-0 max-md:w-3/4 justify-between">
               {skills.map((skill) => (
                 <SkillCard key={skill.name} skill={skill} />
               ))}

@@ -30,8 +30,8 @@ app.post("/send", (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.GMAIL_USER, // Ensure this is correct
-    to: process.env.GMAIL_USER, // Recipient email
+    from: process.env.GMAIL_USER,
+    to: process.env.GMAIL_USER,
     subject: `Message from ${name}`,
     text: message,
     html: `<p>You have a new message from your contact form:</p>

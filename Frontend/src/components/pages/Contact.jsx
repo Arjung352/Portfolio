@@ -3,8 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useState } from "react";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Toaster, toast } from "react-hot-toast";
 import { TailSpin } from "react-loader-spinner";
 
 function Contact() {
@@ -170,7 +169,7 @@ function Contact() {
             </div>
           </div>
         </main>
-        <ToastContainer />
+        <Toaster />
         <div>
           <Footer />
         </div>
