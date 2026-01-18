@@ -57,7 +57,7 @@ app.get("/resume", (req, res) => {
   );
   res.setHeader(
     "Content-Disposition",
-    'inline; filename="Arjun_Gupta_Resume.pdf"',
+    'attachment; filename="Arjun_Gupta_Full_Stack_Developer_Resume.pdf"',
   );
   res.sendFile(filePath, (err) => {
     if (err) {
