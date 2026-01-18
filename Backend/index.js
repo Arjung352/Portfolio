@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require("path"); // Node.js path module
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
@@ -12,8 +13,6 @@ app.use(express.json()); // Using express.json() instead of bodyParser.json()
 app.get("/", (req, res) => {
   res.json({
     message: "Hey There!",
-    email: process.env.ETHEREAL_USER,
-    password: process.env.ETHEREAL_PASS,
   });
 });
 
@@ -49,6 +48,24 @@ app.post("/send", (req, res) => {
   });
 });
 
+// resume route
+app.get("/resume", (req, res) => {
+  const filePath = path.join(
+    __dirname,
+    "public",
+    "Arjun Gupta-FullStack Developer.pdf",
+  );
+  res.setHeader(
+    "Content-Disposition",
+    'inline; filename="Arjun_Gupta_Resume.pdf"',
+  );
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      console.error({ "Error sending resume": err });
+      res.send("Error sending resume").status(500);
+    }
+  });
+});
 // Start server
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is listening on port ${process.env.PORT || 3000}`);
