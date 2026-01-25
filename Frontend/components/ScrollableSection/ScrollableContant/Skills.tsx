@@ -7,7 +7,7 @@ function Skills() {
     backend: "bg-purple-500/20 text-purple-400",
     database: "bg-red-500/20 text-red-400",
     toolsAndPlatforms: "bg-yellow-500/20 text-yellow-400",
-  };
+  } as const;
 
   const skills = {
     languages: ["JavaScript", "TypeScript", "Python", "Java"],
@@ -51,26 +51,33 @@ function Skills() {
     <div className="mb-8">
       <section id="Skills">
         <h2 className="text-3xl font-bold mb-6 text-gray-100">Skills</h2>
-        {Object.entries(skills).map(([category, items], index) => (
-          <div key={index} className="mb-6">
-            <h4 className="text-xl font-semibold mb-3 text-gray-200 capitalize">
-              {category.replace(/([A-Z])/g, " $1")}
-            </h4>
 
-            <div className="flex flex-wrap gap-2">
-              {items.map((item, i) => (
-                <span
-                  key={i}
-                  className={`inline-block px-3 py-1.5 text-xs font-medium rounded-full
-            ${categoryColors[category] || "bg-gray-500/20 text-gray-400"}
-          `}
-                >
-                  {item}
-                </span>
-              ))}
+        {Object.entries(skills).map(([category, items], index) => {
+          // ✅ Type-safe cast
+          const categoryKey = category as keyof typeof categoryColors;
+
+          return (
+            <div key={index} className="mb-6">
+              <h4 className="text-xl font-semibold mb-3 text-gray-200 capitalize">
+                {category.replace(/([A-Z])/g, " $1")}
+              </h4>
+
+              <div className="flex flex-wrap gap-2">
+                {items.map((item, i) => (
+                  <span
+                    key={i}
+                    className={`inline-block px-3 py-1.5 text-xs font-medium rounded-full ${
+                      categoryColors[categoryKey] ||
+                      "bg-gray-500/20 text-gray-400"
+                    }`}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </section>
     </div>
   );
