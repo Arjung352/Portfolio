@@ -1,6 +1,3 @@
-import { title } from "process";
-import React from "react";
-
 function ProjectExprerience() {
   const projects = {
     tasteBudsTreat: {
@@ -19,6 +16,7 @@ function ProjectExprerience() {
         "Razorpay",
         "Nodemailer",
         "REST APIs",
+        "Redux",
       ],
       details: [
         "Engineered a full-stack food ordering platform using the MERN stack with dynamic menu management and cart functionality.",
@@ -44,6 +42,7 @@ function ProjectExprerience() {
         "JWT Authentication",
         "QR Code Generation",
         "Data Analytics",
+        "Redux",
       ],
       details: [
         "Architected a high-performance URL shortening service with instant redirection and QR code generation.",
@@ -66,6 +65,8 @@ function ProjectExprerience() {
         "Cloudinary",
         "Performance Optimization",
         "Responsive Design",
+        "Pagination",
+        "ExpressJS",
       ],
       details: [
         "Built a full-featured blogging platform allowing users to create, edit, and manage rich-text content using an integrated Markdown editor.",
@@ -77,12 +78,12 @@ function ProjectExprerience() {
   };
 
   return (
-    <div>
-      <section id="Projects">
+    <div className="mb-8 opacity-[1] transform-none">
+      <section id="Projects" className="relative ">
         <h2 className="text-3xl font-bold mb-6 text-gray-100">
           Project Experience
         </h2>
-        <ul className="space-y-12">
+        <ul className="space-y-12 relative z-0">
           {Object.entries(projects).map(([key, project], index) => (
             <li
               key={key}
