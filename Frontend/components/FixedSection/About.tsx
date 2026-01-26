@@ -11,7 +11,7 @@ function About() {
   };
   return (
     <>
-      <main className="z-[9999]">
+      <main className="z-[1]">
         {/* Header containing info */}
         <header>
           <Image
@@ -130,7 +130,7 @@ function About() {
           </section>
         </div>
       </main>
-      <div>
+      <div className="z-[9999]">
         <Msg currState={hidden} setState={setHidden} />
       </div>
     </>
