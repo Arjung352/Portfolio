@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     "Software Engineer",
   ],
   authors: [{ name: "Arjun Gupta" }],
+  verification: {
+    google: "CCcfYWP8uggRt9qNCSFuh_oT55vDYXG6LORQPY5bJfs",
+  },
 };
 
 export default function RootLayout({
