@@ -1,8 +1,8 @@
-import React from "react";
 import AboutMe from "./ScrollableContant/AboutMe";
 import Skills from "./ScrollableContant/Skills";
 import ProjectExprerience from "./ScrollableContant/ProjectExprerience";
 import Education from "./ScrollableContant/Education";
+import Certification from "./ScrollableContant/Certification";
 function ScrollableSection() {
   return (
     <div>
@@ -10,6 +10,7 @@ function ScrollableSection() {
       <Skills />
       <ProjectExprerience />
       <Education />
+      <Certification />
     </div>
   );
 }

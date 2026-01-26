@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Education() {
   return (
-    <div className="">
+    <div className="mb-10">
       <section id="Education">
         <h2 className="text-3xl font-bold mb-6 text-gray-100">Education</h2>
         <ul className="space-y-12 ">

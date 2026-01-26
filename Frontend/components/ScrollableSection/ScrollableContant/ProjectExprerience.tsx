@@ -78,7 +78,7 @@ function ProjectExprerience() {
   };
 
   return (
-    <div className="mb-8 opacity-[1] transform-none">
+    <div className="mb-10 opacity-[1] transform-none">
       <section id="Projects" className="relative ">
         <h2 className="text-3xl font-bold mb-6 text-gray-100">
           Project Experience
